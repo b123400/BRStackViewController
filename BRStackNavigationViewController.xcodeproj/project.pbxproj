@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CFF06B4B164EBF3100F22371 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFF06B4A164EBF3100F22371 /* UIKit.framework */; };
+		CFF06B4D164EBF3100F22371 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFF06B4C164EBF3100F22371 /* Foundation.framework */; };
+		CFF06B4F164EBF3100F22371 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFF06B4E164EBF3100F22371 /* CoreGraphics.framework */; };
+		CFF06B55164EBF3100F22371 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CFF06B53164EBF3100F22371 /* InfoPlist.strings */; };
+		CFF06B57164EBF3100F22371 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF06B56164EBF3100F22371 /* main.m */; };
+		CFF06B5B164EBF3100F22371 /* BRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF06B5A164EBF3100F22371 /* BRAppDelegate.m */; };
+		CFF06B5D164EBF3100F22371 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CFF06B5C164EBF3100F22371 /* Default.png */; };
+		CFF06B5F164EBF3100F22371 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CFF06B5E164EBF3100F22371 /* Default@2x.png */; };
+		CFF06B61164EBF3100F22371 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CFF06B60164EBF3100F22371 /* Default-568h@2x.png */; };
+		CFF06B64164EBF3100F22371 /* BRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF06B63164EBF3100F22371 /* BRViewController.m */; };
+		CFF06B67164EBF3100F22371 /* BRViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFF06B65164EBF3100F22371 /* BRViewController_iPhone.xib */; };
+		CFF06B6A164EBF3100F22371 /* BRViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFF06B68164EBF3100F22371 /* BRViewController_iPad.xib */; };
+		CFF06B72164EBF3100F22371 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFF06B71164EBF3100F22371 /* SenTestingKit.framework */; };
+		CFF06B73164EBF3100F22371 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFF06B4A164EBF3100F22371 /* UIKit.framework */; };
+		CFF06B74164EBF3100F22371 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFF06B4C164EBF3100F22371 /* Foundation.framework */; };
+		CFF06B7C164EBF3100F22371 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CFF06B7A164EBF3100F22371 /* InfoPlist.strings */; };
+		CFF06B7F164EBF3100F22371 /* BRStackNavigationViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF06B7E164EBF3100F22371 /* BRStackNavigationViewControllerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CFF06B75164EBF3100F22371 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFF06B3D164EBF3100F22371 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFF06B45164EBF3100F22371;
+			remoteInfo = BRStackNavigationViewController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CFF06B46164EBF3100F22371 /* BRStackNavigationViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BRStackNavigationViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFF06B4A164EBF3100F22371 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CFF06B4C164EBF3100F22371 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CFF06B4E164EBF3100F22371 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CFF06B52164EBF3100F22371 /* BRStackNavigationViewController-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BRStackNavigationViewController-Info.plist"; sourceTree = "<group>"; };
+		CFF06B54164EBF3100F22371 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CFF06B56164EBF3100F22371 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CFF06B58164EBF3100F22371 /* BRStackNavigationViewController-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BRStackNavigationViewController-Prefix.pch"; sourceTree = "<group>"; };
+		CFF06B59164EBF3100F22371 /* BRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRAppDelegate.h; sourceTree = "<group>"; };
+		CFF06B5A164EBF3100F22371 /* BRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BRAppDelegate.m; sourceTree = "<group>"; };
+		CFF06B5C164EBF3100F22371 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		CFF06B5E164EBF3100F22371 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		CFF06B60164EBF3100F22371 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		CFF06B62164EBF3100F22371 /* BRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRViewController.h; sourceTree = "<group>"; };
+		CFF06B63164EBF3100F22371 /* BRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BRViewController.m; sourceTree = "<group>"; };
+		CFF06B66164EBF3100F22371 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/BRViewController_iPhone.xib; sourceTree = "<group>"; };
+		CFF06B69164EBF3100F22371 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/BRViewController_iPad.xib; sourceTree = "<group>"; };
+		CFF06B70164EBF3100F22371 /* BRStackNavigationViewControllerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BRStackNavigationViewControllerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFF06B71164EBF3100F22371 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		CFF06B79164EBF3100F22371 /* BRStackNavigationViewControllerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BRStackNavigationViewControllerTests-Info.plist"; sourceTree = "<group>"; };
+		CFF06B7B164EBF3100F22371 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CFF06B7D164EBF3100F22371 /* BRStackNavigationViewControllerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRStackNavigationViewControllerTests.h; sourceTree = "<group>"; };
+		CFF06B7E164EBF3100F22371 /* BRStackNavigationViewControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BRStackNavigationViewControllerTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CFF06B43164EBF3100F22371 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFF06B4B164EBF3100F22371 /* UIKit.framework in Frameworks */,
+				CFF06B4D164EBF3100F22371 /* Foundation.framework in Frameworks */,
+				CFF06B4F164EBF3100F22371 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFF06B6C164EBF3100F22371 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFF06B72164EBF3100F22371 /* SenTestingKit.framework in Frameworks */,
+				CFF06B73164EBF3100F22371 /* UIKit.framework in Frameworks */,
+				CFF06B74164EBF3100F22371 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CFF06B3B164EBF3100F22371 = {
+			isa = PBXGroup;
+			children = (
+				CFF06B50164EBF3100F22371 /* BRStackNavigationViewController */,
+				CFF06B77164EBF3100F22371 /* BRStackNavigationViewControllerTests */,
+				CFF06B49164EBF3100F22371 /* Frameworks */,
+				CFF06B47164EBF3100F22371 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CFF06B47164EBF3100F22371 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CFF06B46164EBF3100F22371 /* BRStackNavigationViewController.app */,
+				CFF06B70164EBF3100F22371 /* BRStackNavigationViewControllerTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CFF06B49164EBF3100F22371 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CFF06B4A164EBF3100F22371 /* UIKit.framework */,
+				CFF06B4C164EBF3100F22371 /* Foundation.framework */,
+				CFF06B4E164EBF3100F22371 /* CoreGraphics.framework */,
+				CFF06B71164EBF3100F22371 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CFF06B50164EBF3100F22371 /* BRStackNavigationViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CFF06B59164EBF3100F22371 /* BRAppDelegate.h */,
+				CFF06B5A164EBF3100F22371 /* BRAppDelegate.m */,
+				CFF06B62164EBF3100F22371 /* BRViewController.h */,
+				CFF06B63164EBF3100F22371 /* BRViewController.m */,
+				CFF06B65164EBF3100F22371 /* BRViewController_iPhone.xib */,
+				CFF06B68164EBF3100F22371 /* BRViewController_iPad.xib */,
+				CFF06B51164EBF3100F22371 /* Supporting Files */,
+			);
+			path = BRStackNavigationViewController;
+			sourceTree = "<group>";
+		};
+		CFF06B51164EBF3100F22371 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CFF06B52164EBF3100F22371 /* BRStackNavigationViewController-Info.plist */,
+				CFF06B53164EBF3100F22371 /* InfoPlist.strings */,
+				CFF06B56164EBF3100F22371 /* main.m */,
+				CFF06B58164EBF3100F22371 /* BRStackNavigationViewController-Prefix.pch */,
+				CFF06B5C164EBF3100F22371 /* Default.png */,
+				CFF06B5E164EBF3100F22371 /* Default@2x.png */,
+				CFF06B60164EBF3100F22371 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CFF06B77164EBF3100F22371 /* BRStackNavigationViewControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				CFF06B7D164EBF3100F22371 /* BRStackNavigationViewControllerTests.h */,
+				CFF06B7E164EBF3100F22371 /* BRStackNavigationViewControllerTests.m */,
+				CFF06B78164EBF3100F22371 /* Supporting Files */,
+			);
+			path = BRStackNavigationViewControllerTests;
+			sourceTree = "<group>";
+		};
+		CFF06B78164EBF3100F22371 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CFF06B79164EBF3100F22371 /* BRStackNavigationViewControllerTests-Info.plist */,
+				CFF06B7A164EBF3100F22371 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CFF06B45164EBF3100F22371 /* BRStackNavigationViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFF06B82164EBF3100F22371 /* Build configuration list for PBXNativeTarget "BRStackNavigationViewController" */;
+			buildPhases = (
+				CFF06B42164EBF3100F22371 /* Sources */,
+				CFF06B43164EBF3100F22371 /* Frameworks */,
+				CFF06B44164EBF3100F22371 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BRStackNavigationViewController;
+			productName = BRStackNavigationViewController;
+			productReference = CFF06B46164EBF3100F22371 /* BRStackNavigationViewController.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CFF06B6F164EBF3100F22371 /* BRStackNavigationViewControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFF06B85164EBF3100F22371 /* Build configuration list for PBXNativeTarget "BRStackNavigationViewControllerTests" */;
+			buildPhases = (
+				CFF06B6B164EBF3100F22371 /* Sources */,
+				CFF06B6C164EBF3100F22371 /* Frameworks */,
+				CFF06B6D164EBF3100F22371 /* Resources */,
+				CFF06B6E164EBF3100F22371 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFF06B76164EBF3100F22371 /* PBXTargetDependency */,
+			);
+			name = BRStackNavigationViewControllerTests;
+			productName = BRStackNavigationViewControllerTests;
+			productReference = CFF06B70164EBF3100F22371 /* BRStackNavigationViewControllerTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CFF06B3D164EBF3100F22371 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BR;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = b123400;
+			};
+			buildConfigurationList = CFF06B40164EBF3100F22371 /* Build configuration list for PBXProject "BRStackNavigationViewController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CFF06B3B164EBF3100F22371;
+			productRefGroup = CFF06B47164EBF3100F22371 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CFF06B45164EBF3100F22371 /* BRStackNavigationViewController */,
+				CFF06B6F164EBF3100F22371 /* BRStackNavigationViewControllerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CFF06B44164EBF3100F22371 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFF06B55164EBF3100F22371 /* InfoPlist.strings in Resources */,
+				CFF06B5D164EBF3100F22371 /* Default.png in Resources */,
+				CFF06B5F164EBF3100F22371 /* Default@2x.png in Resources */,
+				CFF06B61164EBF3100F22371 /* Default-568h@2x.png in Resources */,
+				CFF06B67164EBF3100F22371 /* BRViewController_iPhone.xib in Resources */,
+				CFF06B6A164EBF3100F22371 /* BRViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFF06B6D164EBF3100F22371 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFF06B7C164EBF3100F22371 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CFF06B6E164EBF3100F22371 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CFF06B42164EBF3100F22371 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFF06B57164EBF3100F22371 /* main.m in Sources */,
+				CFF06B5B164EBF3100F22371 /* BRAppDelegate.m in Sources */,
+				CFF06B64164EBF3100F22371 /* BRViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFF06B6B164EBF3100F22371 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFF06B7F164EBF3100F22371 /* BRStackNavigationViewControllerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CFF06B76164EBF3100F22371 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CFF06B45164EBF3100F22371 /* BRStackNavigationViewController */;
+			targetProxy = CFF06B75164EBF3100F22371 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CFF06B53164EBF3100F22371 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFF06B54164EBF3100F22371 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CFF06B65164EBF3100F22371 /* BRViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFF06B66164EBF3100F22371 /* en */,
+			);
+			name = BRViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		CFF06B68164EBF3100F22371 /* BRViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFF06B69164EBF3100F22371 /* en */,
+			);
+			name = BRViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+		CFF06B7A164EBF3100F22371 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFF06B7B164EBF3100F22371 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CFF06B80164EBF3100F22371 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CFF06B81164EBF3100F22371 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CFF06B83164EBF3100F22371 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BRStackNavigationViewController/BRStackNavigationViewController-Prefix.pch";
+				INFOPLIST_FILE = "BRStackNavigationViewController/BRStackNavigationViewController-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CFF06B84164EBF3100F22371 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BRStackNavigationViewController/BRStackNavigationViewController-Prefix.pch";
+				INFOPLIST_FILE = "BRStackNavigationViewController/BRStackNavigationViewController-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CFF06B86164EBF3100F22371 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BRStackNavigationViewController.app/BRStackNavigationViewController";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BRStackNavigationViewController/BRStackNavigationViewController-Prefix.pch";
+				INFOPLIST_FILE = "BRStackNavigationViewControllerTests/BRStackNavigationViewControllerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		CFF06B87164EBF3100F22371 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BRStackNavigationViewController.app/BRStackNavigationViewController";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BRStackNavigationViewController/BRStackNavigationViewController-Prefix.pch";
+				INFOPLIST_FILE = "BRStackNavigationViewControllerTests/BRStackNavigationViewControllerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CFF06B40164EBF3100F22371 /* Build configuration list for PBXProject "BRStackNavigationViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFF06B80164EBF3100F22371 /* Debug */,
+				CFF06B81164EBF3100F22371 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFF06B82164EBF3100F22371 /* Build configuration list for PBXNativeTarget "BRStackNavigationViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFF06B83164EBF3100F22371 /* Debug */,
+				CFF06B84164EBF3100F22371 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CFF06B85164EBF3100F22371 /* Build configuration list for PBXNativeTarget "BRStackNavigationViewControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFF06B86164EBF3100F22371 /* Debug */,
+				CFF06B87164EBF3100F22371 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CFF06B3D164EBF3100F22371 /* Project object */;
+}
