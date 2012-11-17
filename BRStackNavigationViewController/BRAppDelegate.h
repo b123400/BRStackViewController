@@ -7,13 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BRStackViewController.h"
 
-@class BRViewController;
+@class RootViewController;
 
 @interface BRAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) BRViewController *viewController;
+@property (strong, nonatomic) BRStackViewController *viewController;
 
 @end

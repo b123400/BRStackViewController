@@ -8,26 +8,24 @@
 
 #import "BRAppDelegate.h"
 
-#import "BRViewController.h"
+#import "RootViewController.h"
 
 @implementation BRAppDelegate
 
-- (void)dealloc
-{
-    [_window release];
-    [_viewController release];
-    [super dealloc];
-}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    
+    UIViewController *rootViewController=nil;
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        self.viewController = [[[BRViewController alloc] initWithNibName:@"BRViewController_iPhone" bundle:nil] autorelease];
+        rootViewController = [[RootViewController alloc] initWithNibName:@"RootViewController_iPhone" bundle:nil];
     } else {
-        self.viewController = [[[BRViewController alloc] initWithNibName:@"BRViewController_iPad" bundle:nil] autorelease];
+        rootViewController = [[RootViewController alloc] initWithNibName:@"RootViewController_iPad" bundle:nil];
     }
+    self.viewController=[[BRStackViewController alloc]initWithRootViewController:rootViewController];
+    
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;
