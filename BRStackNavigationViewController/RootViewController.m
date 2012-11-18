@@ -37,14 +37,20 @@
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    RootViewController *rootViewController=nil;
+    RootViewController *newViewController=nil;
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        rootViewController = [[RootViewController alloc] initWithNibName:@"RootViewController_iPhone" bundle:nil];
+        newViewController = [[RootViewController alloc] initWithNibName:@"RootViewController_iPhone" bundle:nil];
     } else {
-        rootViewController = [[RootViewController alloc] initWithNibName:@"RootViewController_iPad" bundle:nil];
+        newViewController = [[RootViewController alloc] initWithNibName:@"RootViewController_iPad" bundle:nil];
     }
-    rootViewController.view.frame=CGRectInset(rootViewController.view.frame, 50, 50);
-    [self.stackViewController pushViewController:rootViewController];
+    if(self.parentViewController.childViewControllers.count==1){
+        newViewController.view.frame=CGRectInset([self.parentViewController.childViewControllers.lastObject view].frame, 25, 25);
+    }else if(self.parentViewController.childViewControllers.count==2){
+        newViewController.view.frame=CGRectInset([self.parentViewController.childViewControllers.lastObject view].frame, -10, 0);
+    }else{
+        newViewController.view.frame=CGRectInset([self.parentViewController.childViewControllers.lastObject view].frame, 60, 40);
+    }
+    [self.stackViewController pushViewController:newViewController];
 }
 
 - (void)didReceiveMemoryWarning

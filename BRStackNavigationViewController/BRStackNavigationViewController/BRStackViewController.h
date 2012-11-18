@@ -9,10 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface BRStackViewController : UIViewController{
-    NSMutableArray *viewControllers;
     NSMutableArray *containers;
+    BOOL isPushing;
+    BOOL isPoping;
 }
-@property (strong,nonatomic) NSMutableArray *viewControllers;
 @property (strong,nonatomic) NSMutableArray *containers;
 
 -(id)initWithRootViewController:(UIViewController*)rootViewController;
@@ -21,5 +21,9 @@
 
 -(UIViewController*)topViewController;
 -(UIViewController*)rootViewController;
+
+#pragma mark UINavigationViewController compatible
+
+-(NSArray*)viewControllers;
 
 @end
