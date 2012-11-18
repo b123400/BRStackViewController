@@ -11,7 +11,9 @@
 @interface BRStackViewController : UIViewController{
     NSMutableArray *containers;
     BOOL isPushing;
-    BOOL isPoping;
+    BOOL isPopping;
+    
+    UIView *panningView;
 }
 @property (strong,nonatomic) NSMutableArray *containers;
 

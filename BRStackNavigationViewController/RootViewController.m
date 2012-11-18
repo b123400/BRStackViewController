@@ -8,7 +8,6 @@
 
 #import "RootViewController.h"
 #import "BRStackViewController.h"
-#import "UIViewController+Stack.h"
 
 @interface RootViewController ()
 
@@ -50,7 +49,7 @@
     }else{
         newViewController.view.frame=CGRectInset([self.parentViewController.childViewControllers.lastObject view].frame, 60, 40);
     }
-    [self.stackViewController pushViewController:newViewController];
+    [(id)self.parentViewController pushViewController:newViewController];
 }
 
 - (void)didReceiveMemoryWarning

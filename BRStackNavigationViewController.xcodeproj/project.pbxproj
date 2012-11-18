@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5547527FEA754572870FADAD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A66EAF9C6F5404B96F64C1C /* libPods.a */; };
 		CF9128EF164EF4AA0066D261 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF9128EE164EF4AA0066D261 /* QuartzCore.framework */; };
+		CFBC46431657FEBE00170FE1 /* BRViewContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = CFBC46421657FEBE00170FE1 /* BRViewContainer.m */; };
 		CFF06B4B164EBF3100F22371 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFF06B4A164EBF3100F22371 /* UIKit.framework */; };
 		CFF06B4D164EBF3100F22371 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFF06B4C164EBF3100F22371 /* Foundation.framework */; };
 		CFF06B4F164EBF3100F22371 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFF06B4E164EBF3100F22371 /* CoreGraphics.framework */; };
@@ -27,7 +28,6 @@
 		CFF06B7C164EBF3100F22371 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CFF06B7A164EBF3100F22371 /* InfoPlist.strings */; };
 		CFF06B7F164EBF3100F22371 /* BRStackNavigationViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF06B7E164EBF3100F22371 /* BRStackNavigationViewControllerTests.m */; };
 		CFF06B8B164EBFC800F22371 /* BRStackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF06B8A164EBFC800F22371 /* BRStackViewController.m */; };
-		CFF06B99164ECF9A00F22371 /* UIViewController+Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF06B98164ECF9A00F22371 /* UIViewController+Stack.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +43,8 @@
 /* Begin PBXFileReference section */
 		6A66EAF9C6F5404B96F64C1C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF9128EE164EF4AA0066D261 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		CFBC46411657FEBE00170FE1 /* BRViewContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BRViewContainer.h; path = BRStackNavigationViewController/BRViewContainer.h; sourceTree = "<group>"; };
+		CFBC46421657FEBE00170FE1 /* BRViewContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BRViewContainer.m; path = BRStackNavigationViewController/BRViewContainer.m; sourceTree = "<group>"; };
 		CFF06B46164EBF3100F22371 /* BRStackNavigationViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BRStackNavigationViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFF06B4A164EBF3100F22371 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CFF06B4C164EBF3100F22371 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -68,8 +70,6 @@
 		CFF06B7E164EBF3100F22371 /* BRStackNavigationViewControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BRStackNavigationViewControllerTests.m; sourceTree = "<group>"; };
 		CFF06B89164EBFC800F22371 /* BRStackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BRStackViewController.h; path = BRStackNavigationViewController/BRStackViewController.h; sourceTree = "<group>"; };
 		CFF06B8A164EBFC800F22371 /* BRStackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BRStackViewController.m; path = BRStackNavigationViewController/BRStackViewController.m; sourceTree = "<group>"; };
-		CFF06B97164ECF9A00F22371 /* UIViewController+Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Stack.h"; path = "BRStackNavigationViewController/UIViewController+Stack.h"; sourceTree = "<group>"; };
-		CFF06B98164ECF9A00F22371 /* UIViewController+Stack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Stack.m"; path = "BRStackNavigationViewController/UIViewController+Stack.m"; sourceTree = "<group>"; };
 		F1B4563D1B0B4F59B49FA91B /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -186,8 +186,8 @@
 			children = (
 				CFF06B89164EBFC800F22371 /* BRStackViewController.h */,
 				CFF06B8A164EBFC800F22371 /* BRStackViewController.m */,
-				CFF06B97164ECF9A00F22371 /* UIViewController+Stack.h */,
-				CFF06B98164ECF9A00F22371 /* UIViewController+Stack.m */,
+				CFBC46411657FEBE00170FE1 /* BRViewContainer.h */,
+				CFBC46421657FEBE00170FE1 /* BRViewContainer.m */,
 			);
 			name = BRStackNavigationViewController;
 			sourceTree = "<group>";
@@ -443,7 +443,7 @@
 				CFF06B5B164EBF3100F22371 /* BRAppDelegate.m in Sources */,
 				CFF06B64164EBF3100F22371 /* RootViewController.m in Sources */,
 				CFF06B8B164EBFC800F22371 /* BRStackViewController.m in Sources */,
-				CFF06B99164ECF9A00F22371 /* UIViewController+Stack.m in Sources */,
+				CFBC46431657FEBE00170FE1 /* BRViewContainer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
