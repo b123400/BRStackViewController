@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RootViewController : UIViewController <UITableViewDataSource,UITableViewDelegate>
+@interface RootViewController : UIViewController <UITableViewDataSource,UITableViewDelegate>{
+}
+
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
 @end

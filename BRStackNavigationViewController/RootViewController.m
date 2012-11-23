@@ -19,6 +19,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    self.scrollView.contentSize=CGSizeMake(self.scrollView.frame.size.width*3, self.scrollView.frame.size.height);
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -51,6 +52,13 @@
     }
     [(id)self.parentViewController pushViewController:newViewController];
 }
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    NSLog(@"%@",NSStringFromCGPoint(scrollView.contentOffset));
+    if(scrollView.contentOffset.x<=0){
+        //[(BRStackViewController*)self.parentViewController layoutWithPopProgress:scrollView.contentOffset.x/self.view.frame.size.width*-1 completion:nil animated:NO];
+        [scrollView setScrollEnabled:NO];
+    }
+}
 
 - (void)didReceiveMemoryWarning
 {
@@ -58,4 +66,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)viewDidUnload {
+    [self setScrollView:nil];
+    [super viewDidUnload];
+}
 @end

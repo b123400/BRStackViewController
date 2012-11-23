@@ -50,6 +50,9 @@
     
     CGPathRef path = [UIBezierPath bezierPathWithRect:self.view.bounds].CGPath;
     [self.view.layer setShadowPath:path];
+    
+    self.view.layer.anchorPoint = CGPointMake(0,0.5);
+    self.view.center=CGPointMake(0, self.frame.size.height/2);
 }
 /*
 // Only override drawRect: if you perform custom drawing.

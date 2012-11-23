@@ -23,6 +23,7 @@
 
 -(UIViewController*)topViewController;
 -(UIViewController*)rootViewController;
+-(void)layoutWithPopProgress:(float)popProgress completion:(void (^)(BOOL finished))completion animated:(BOOL)animated;
 
 #pragma mark UINavigationViewController compatible
 
