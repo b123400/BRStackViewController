@@ -54,10 +54,6 @@
 }
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
     NSLog(@"%@",NSStringFromCGPoint(scrollView.contentOffset));
-    if(scrollView.contentOffset.x<=0){
-        //[(BRStackViewController*)self.parentViewController layoutWithPopProgress:scrollView.contentOffset.x/self.view.frame.size.width*-1 completion:nil animated:NO];
-        [scrollView setScrollEnabled:NO];
-    }
 }
 
 - (void)didReceiveMemoryWarning

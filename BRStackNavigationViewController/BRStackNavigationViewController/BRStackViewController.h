@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BRStackViewController : UIViewController{
+@interface BRStackViewController : UIViewController <UIGestureRecognizerDelegate>{
     NSMutableArray *containers;
     BOOL isPushing;
     BOOL isPopping;

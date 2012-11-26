@@ -67,7 +67,15 @@
     frame.origin=CGPointMake(self.view.frame.size.width-container.frame.size.width, (self.view.frame.size.height-container.frame.size.height)/2);
     container.frame=frame;
     [self.view addSubview:container];
-    container.layer.transform=CATransform3DMakeTranslation(container.frame.size.width, 0, 0);
+    if(self.containers.count==1){
+        CATransform3D transform=CATransform3DIdentity;
+        transform.m34=1/-900.f;
+        transform=CATransform3DTranslate(transform, 0, 0, -400);
+        transform=CATransform3DRotate(transform, M_PI*2/5, 0, 1, 0);
+        container.layer.transform=transform;
+    }else{
+        container.layer.transform=CATransform3DMakeTranslation(container.frame.size.width, 0, 0);
+    }
     
     [self layoutWithPopProgress:0 completion:nil animated:YES];
 }
@@ -114,7 +122,8 @@
 #pragma mark make animation
 
 -(void)layoutWithPopProgress:(float)popProgress completion:(void (^)(BOOL finished))completion animated:(BOOL)animated{
-    float duration=0.5;
+    float duration=0.3;
+    float shiftPerLayer=0.3;
     if(animated){
         [UIView beginAnimations:nil context:NULL];
         [UIView setAnimationDuration:duration];
@@ -159,6 +168,11 @@
                 aTransform=CATransform3DRotate(aTransform, M_PI_4*(1-popProgress), 0, 1, 0);
 
                 thisContainer.view.layer.transform=aTransform;
+            }
+            if(i<=containers.count-2){
+                float thisShift=(containers.count-1-i)*shiftPerLayer-shiftPerLayer*popProgress;
+                thisShift=MIN(thisShift, 0.9);
+                [thisContainer setCoverViewOpacity:thisShift];
             }
         }
     }

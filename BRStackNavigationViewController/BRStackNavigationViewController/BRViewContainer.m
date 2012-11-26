@@ -9,14 +9,16 @@
 #import "BRViewContainer.h"
 
 @implementation BRViewContainer
-@synthesize view,isImage;
+@synthesize view,isImage,coverView;
 
-- (id)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self) {
-        self.layer.rasterizationScale = [UIScreen mainScreen].scale;
-    }
+-(id)init{
+    self=[super init];
+    self.layer.rasterizationScale = [UIScreen mainScreen].scale;
+    self.coverView=[[UIView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
+    self.coverView.autoresizingMask=UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
+    [self setCoverViewOpacity:0];
+    self.coverView.backgroundColor=[UIColor blackColor];
+    [self addSubview:coverView];
     return self;
 }
 -(id)initWithView:(UIView*)_view{
@@ -37,11 +39,11 @@
     frame=self.frame;
     frame.size=newView.frame.size;
     self.frame=frame;
-    [self addSubview:newView];
+    [self insertSubview:newView belowSubview:coverView];
     
     self.view.layer.shadowColor=[[UIColor blackColor] CGColor];
-    self.view.layer.shadowOpacity=1;
-    self.view.layer.shadowRadius=10;
+    self.view.layer.shadowOpacity=0.5;
+    self.view.layer.shadowRadius=5;
     
     self.layer.shouldRasterize = YES;
     // Don't forget the rasterization scale
@@ -53,14 +55,22 @@
     
     self.view.layer.anchorPoint = CGPointMake(0,0.5);
     self.view.center=CGPointMake(0, self.frame.size.height/2);
+    
+    coverView.layer.anchorPoint=self.view.layer.anchorPoint;
+    coverView.center=self.view.center;
 }
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
-{
-    // Drawing code
+-(void)setCoverViewOpacity:(float)opacity{
+    if(opacity==0){
+        coverView.hidden=YES;
+    }else{
+        coverView.hidden=NO;
+    }
+    coverView.layer.opacity=opacity;
+    if(self.view){
+        coverView.layer.transform=self.view.layer.transform;
+    }
 }
-*/
+
+
 
 @end

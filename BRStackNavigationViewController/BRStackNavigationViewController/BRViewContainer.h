@@ -10,11 +10,14 @@
 
 @interface BRViewContainer : UIView{
     UIView *view;
+    UIView *coverView;
     BOOL isImage;
 }
 @property (strong,nonatomic) UIView *view;
+@property (strong,nonatomic) UIView *coverView;
 @property (assign,nonatomic) BOOL isImage;
 
 -(id)initWithView:(UIView*)view;
+-(void)setCoverViewOpacity:(float)opacity;
 
 @end
